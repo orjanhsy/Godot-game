@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxq62pippfoe2"]
+
+[ext_resource type="Script" path="res://BG.gd" id="1_ifj8e"]
+[ext_resource type="Texture2D" uid="uid://dop0id7lq2xse" path="res://assets/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/Background/back.png" id="1_sh38d"]
+[ext_resource type="Texture2D" uid="uid://2gwj01wi4kmf" path="res://assets/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/Background/middle.png" id="3_hcqxv"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_ifj8e")
+
+[node name="Skies" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1153, 0)
+
+[node name="Back" type="Sprite2D" parent="Skies"]
+position = Vector2(587, 314)
+scale = Vector2(3.0599, 2.62604)
+texture = ExtResource("1_sh38d")
+
+[node name="Woods" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1224, 0)
+
+[node name="Middle" type="Sprite2D" parent="Woods"]
+position = Vector2(84, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
+
+[node name="Middle2" type="Sprite2D" parent="Woods"]
+position = Vector2(260, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
+
+[node name="Middle3" type="Sprite2D" parent="Woods"]
+position = Vector2(434, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
+
+[node name="Middle4" type="Sprite2D" parent="Woods"]
+position = Vector2(610, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
+
+[node name="Middle5" type="Sprite2D" parent="Woods"]
+position = Vector2(785, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
+
+[node name="Middle6" type="Sprite2D" parent="Woods"]
+position = Vector2(961, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
+
+[node name="Middle7" type="Sprite2D" parent="Woods"]
+position = Vector2(1135, 471)
+texture = ExtResource("3_hcqxv")
+metadata/_edit_lock_ = true
