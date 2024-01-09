@@ -1,5 +1,1 @@
-# Local files #
-###############
-*.godot/
-.godot/
-.godot
+**/.godot/
