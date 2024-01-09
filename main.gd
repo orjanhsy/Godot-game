@@ -2,7 +2,7 @@ extends Node2D
 
 
 func _ready():
-	pass
+	Utils.loadGame()
 	
 func _on_quit_pressed() -> void:
 	get_tree().quit()

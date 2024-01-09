@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://bauvklpopiwu"]
+[gd_scene load_steps=13 format=3 uid="uid://bauvklpopiwu"]
 
 [ext_resource type="Script" path="res://BG.gd" id="1_5ya7v"]
 [ext_resource type="PackedScene" uid="uid://bny6tis548xl8" path="res://player.tscn" id="1_macg5"]
 [ext_resource type="Texture2D" uid="uid://57l0k3ml6vgp" path="res://assets/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/tileset.png" id="1_mref6"]
 [ext_resource type="Texture2D" uid="uid://dop0id7lq2xse" path="res://assets/Sunny-land-files/Sunny-land-files/Graphical Assets/environment/Background/back.png" id="2_niy8b"]
 [ext_resource type="PackedScene" uid="uid://xic0q728o5d4" path="res://frog.tscn" id="5_86ihy"]
+[ext_resource type="Script" path="res://ExpBar.gd" id="6_6ynra"]
+[ext_resource type="Script" path="res://level.gd" id="7_f7du1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjf3m"]
 texture = ExtResource("1_mref6")
@@ -503,6 +505,22 @@ offset_bottom = 34.0
 theme_override_colors/font_color = Color(0.698039, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 script = SubResource("GDScript_xptra")
+
+[node name="ExpBar" type="ProgressBar" parent="UI"]
+offset_left = 287.0
+offset_top = 6.0
+offset_right = 823.0
+offset_bottom = 19.0
+show_percentage = false
+script = ExtResource("6_6ynra")
+
+[node name="level" type="Label" parent="UI"]
+offset_left = 17.0
+offset_top = 44.0
+offset_right = 57.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0, 0, 0.8, 1)
+script = ExtResource("7_f7du1")
 
 [node name="Collectables" type="Node2D" parent="."]
 script = SubResource("GDScript_phbbo")

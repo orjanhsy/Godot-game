@@ -56,6 +56,8 @@ func _on_player_collision_body_entered(body: Node2D) -> void:
 			
 func death():
 	Game.gold += 5
+	Game.xp += 10
+	$"../../UI/ExpBar".set_exp_bar()
 	chase = false
 	sprite.play("death")
 	await sprite.animation_finished
